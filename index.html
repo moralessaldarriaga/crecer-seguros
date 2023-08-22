@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Crecer Seguros</title>
+    <script type="module" crossorigin src="/crecer-seguros/assets/main-36ad0b92.js"></script>
+    <link rel="stylesheet" href="/crecer-seguros/assets/index-fc376792.css">
+  </head>
+  <body>
+    <main>
+      <div class="login">
+        <img src="/crecer-seguros/assets/logo-0c237096.svg" alt="logo crecer seguros" width="170" height="54">
+        <h2><strong>¡Hola!, necesitamos conocer los detalles de tu seguro,</strong> de acuerdo al tipo de emergencia seleccionada.</h2>
+        <p><strong>Ingresa tus credenciales</strong> para acceder a nuestros servicios online.</p>
+        <form id="formLogin" class="form form__login form__validate" action="">
+          <div class="form_box">
+            <img src="/crecer-seguros/assets/ico__document-44bef542.svg" alt="ico document" width="28" height="28">
+            <select class="form_control form_control__select" name="type_document" required>
+              <option value="0" selected disabled>Selecciona</option>
+              <option value="1">DNI</option>
+              <option value="2">Carnet de extranjeria</option>
+            </select>            
+            <label class="form_label">Tipo de documento</label>
+          </div>
+          <div class="form_box">
+            <img src="/crecer-seguros/assets/ico__number-d4f26f26.svg" alt="ico number" width="28" height="28">
+            <input type="tel" class="form_control form_control__input" name="document" placeholder="Nro. Documento" required>
+            <label class="form_label">Nro. Documento</label>
+          </div>
+          <div class="form_box">
+            <img src="/crecer-seguros/assets/ico__password-2ee730e8.svg" alt="ico password" width="28" height="28">
+            <input type="password" class="form_control form_control__input" name="password" placeholder="Contraseña" required>
+            <label class="form_label">Contraseña</label>
+          </div>
+          <a href="#" class="forgot">¿Olvidaste tu contraseña?</a>
+          <div class="form_btn">
+            <button type="submit" class="btn btn__big btn__yellow">Iniciar sesión</button>
+            <a href="registro.html" class="btn btn__big btn__lightblue">Regístrate</a>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_box">
+        Crecer Seguros S.A. Compañía de Seguros - RUC 20600098633 - <a href="www.crecerseguros.pe" target="_blank"><strong>www.crecerseguros.pe</strong></a>
+      </div>
+      <div class="footer_box footer_box__line"></div>
+      <div class="footer_box footer_box__follow">
+        <p><strong>Siguenos en:</strong></p>
+        <div class="footer_box_social">
+          <a href="" target="_blank"><img src="/crecer-seguros/assets/ico__facebook-56a9cd2c.svg" alt="ico facebook" width="28" height="28"></a>
+          <a href="" target="_blank"><img src="/crecer-seguros/assets/ico__instagram-8d587570.svg" alt="ico instagram" width="28" height="28"></a>
+          <a href="" target="_blank"><img src="/crecer-seguros/assets/ico__linkedin-0ad11d68.svg" alt="ico linkedin" width="28" height="28"></a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/localization/messages_es_PE.min.js"></script>
+    
+  </body>
+</html>

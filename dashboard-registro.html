@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Crecer Seguros</title>
+    <script type="module" crossorigin src="/crecer-seguros/assets/main-36ad0b92.js"></script>
+    <link rel="stylesheet" href="/crecer-seguros/assets/index-fc376792.css">
+  </head>
+  <body>
+        <main>
+            <div class="app">
+                <div class="app_menu">
+                    <img src="/crecer-seguros/assets/logo-0c237096.svg" alt="logo crecer seguros" width="170" height="54">
+                    <nav class="menu">
+                        <ul>
+                            <li>
+                                <a href="dashboard.html">
+                                    <span><img src="/crecer-seguros/assets/ico__home-bff1f330.svg" alt="ico home" width="21" height="21"></span>
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-datos.html">
+                                    <span><img src="/crecer-seguros/assets/ico__datos-c6d9c3a5.svg" alt="ico datos" width="21" height="21"></span>
+                                    Mis datos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-registro.html" class="active">
+                                    <span><img src="/crecer-seguros/assets/ico__solicitud-1580a9bc.svg" alt="ico solicitud" width="21" height="21"></span>
+                                    Registro <br> de solicitud
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-tramite.html">
+                                    <span><img src="/crecer-seguros/assets/ico__tramites-5246c694.svg" alt="ico tramite" width="21" height="21"></span>
+                                    Mis trámites
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="menuMobile">
+                        <img id="openMenu" src="/crecer-seguros/assets/ico__burguer-9cfde423.svg" alt="ico burguer" width="19" height="16">
+                        <img id="closeMenu" src="/crecer-seguros/assets/ico__close-8599f270.svg" alt="ico close" width="30" height="30">
+                    </div>
+                    <div class="mobile">
+                        <nav class="menu">
+                            <ul>
+                                <li>
+                                    <a href="dashboard.html">
+                                        <span><img src="/crecer-seguros/assets/ico__home-bff1f330.svg" alt="ico home" width="21" height="21"></span>
+                                        Inicio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboard-datos.html">
+                                        <span><img src="/crecer-seguros/assets/ico__datos-c6d9c3a5.svg" alt="ico datos" width="21" height="21"></span>
+                                        Mis datos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboard-registro.html" class="active">
+                                        <span><img src="/crecer-seguros/assets/ico__solicitud-1580a9bc.svg" alt="ico solicitud" width="21" height="21"></span>
+                                        Registro de solicitud
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboard-tramite.html">
+                                        <span><img src="/crecer-seguros/assets/ico__tramites-5246c694.svg" alt="ico tramite" width="21" height="21"></span>
+                                        Mis trámites
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="app_content">
+                    <div class="app_breadcrumb">
+                        <span>Inicio</span>
+                        <span>Registro de solicitud</span>
+                    </div>
+                    <form id="formSteps" class="form__validate" action="">      
+                        <div>
+                            <h3>Declarante</h3>
+                            <section>
+                                <div class="app_title">
+                                    <p><strong>Declarante</strong></p>
+                                    <p>Ingresa los detalles del declarante.</p>
+                                </div>
+                                <div class="form form__register">
+                                    <div class="form_box">
+                                        <select class="form_control form_control__select" name="type_document_application" required>
+                                            <option value="0" selected disabled>Tipo de documento*</option>
+                                            <option value="1">DNI</option>
+                                            <option value="2">Carnet de extranjeria</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="text" class="form_control form_control__input" name="name_application" placeholder="Nombre*" required>
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="tel" class="form_control form_control__input" name="numbe_application" placeholder="Nro. Documento*" required>
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="text" class="form_control form_control__input" name="fullname_application" placeholder="Apellido paterno*" required>
+                                    </div>
+                                    <div class="form_box">
+                                        <select class="form_control form_control__select" name="parent_application" required>
+                                            <option value="0" selected disabled>Parentesco*</option>
+                                            <option value="1">...</option>
+                                            <option value="2">...</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="text" class="form_control form_control__input" name="fullname2_application" placeholder="Apellido materno*" required>
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="email" class="form_control form_control__input" name="email_application" placeholder="Correo*" required>
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="tel" class="form_control form_control__input" name="phone_application" placeholder="Número de celular*" required>
+                                    </div>
+                                    <div class="form_box form_box__city">
+                                        <div class="form_box">
+                                            <select class="form_control form_control__select" name="departamento_application" required>
+                                                <option value="0" selected disabled>Departamento*</option>
+                                                <option value="1">...</option>
+                                                <option value="2">...</option>
+                                            </select>
+                                        </div>
+                                        <div class="form_box">
+                                            <select class="form_control form_control__select" name="provincia_application" required>
+                                                <option value="0" selected disabled>Provincia*</option>
+                                                <option value="1">...</option>
+                                                <option value="2">...</option>
+                                            </select>
+                                        </div>
+                                        <div class="form_box">
+                                            <select class="form_control form_control__select" name="distrito_application" required>
+                                                <option value="0" selected disabled>Distrito*</option>
+                                                <option value="1">...</option>
+                                                <option value="2">...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form_box form_box__address">
+                                        <input type="text" class="form_control form_control__input" name="address_application" placeholder="Dirección*" required>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <h3>Asegurado</h3>
+                            <section>
+                                <div class="app_title">
+                                    <p><strong>Asegurado</strong></p>
+                                    <p>Ingresa los detalles del asegurado.</p>
+                                </div>
+                                <div class="form form__register">
+                                    <div class="form_box form_box__check_first">
+                                        <input class="checkbox" id="replicate_date" type="checkbox" />
+                                        <label class="checkbox_label" for="replicate_date">
+                                            <span>¿Desea replicar los datos del asegurado?</span>
+                                        </label>
+                                    </div>
+                                    <div class="form_box">
+                                        <select class="form_control form_control__select" name="type_document_insured_application" required>
+                                            <option value="0" selected disabled>Tipo de documento*</option>
+                                            <option value="1">DNI</option>
+                                            <option value="2">Carnet de extranjeria</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="text" class="form_control form_control__input" name="fullname_insured_application" placeholder="Apellido Paterno*" required>
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="tel" class="form_control form_control__input" name="document_insured_application" placeholder="Nro de Documento*" required>
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="text" class="form_control form_control__input" name="fullname2_insured_application" placeholder="Apellido Materno*" required>
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="text" class="form_control form_control__input" name="name_insured_application" placeholder="Nombre*" required>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <h3>Siniestro</h3>
+                            <section>
+                                <div class="app_title">
+                                    <p><strong>Siniestro</strong></p>
+                                    <p>Ingresa los detalles del siniestro.</p>
+                                </div>
+                                <div class="form form__register">
+                                    <div class="form_box">
+                                        <input type="text" class="form_control form_control__input" name="date_application" placeholder="Fecha de ocurrencia*" onfocus="(this.type='date')" required>
+                                    </div>
+                                    <div class="form_box">
+                                        <select class="form_control form_control__select" name="channel_application" required>
+                                            <option value="0" selected disabled>Canal*</option>
+                                            <option value="1">....</option>
+                                            <option value="2">....</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_box">
+                                        <select class="form_control form_control__select" name="product_application" required>
+                                            <option value="0" selected disabled>Producto*</option>
+                                            <option value="1">....</option>
+                                            <option value="2">....</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_box">
+                                        <select class="form_control form_control__select" name="coverage_application" required>
+                                            <option value="0" selected disabled>Cobertura*</option>
+                                            <option value="1">....</option>
+                                            <option value="2">....</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="text" class="form_control form_control__input" name="policy_application" placeholder="Póliza">
+                                    </div>
+                                </div>
+                            </section>
+
+                            <h3>Funcionario</h3>
+                            <section>
+                                <div class="app_title">
+                                    <p><strong>Funcionario</strong></p>
+                                    <p>Ingresa los detalles del funcionario.</p>
+                                </div>
+                                <div class="form form__register">
+                                    <div class="form_box">
+                                        <input type="text" class="form_control form_control__input" name="fullname_official_application" placeholder="Nombre y apellidos">
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="text" class="form_control form_control__input" name="office_official_application" placeholder="Oficina">
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="email" class="form_control form_control__input" name="email_official_application" placeholder="Correo">
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="tel" class="form_control form_control__input" name="phone_official_application" placeholder="Teléfono">
+                                    </div>
+                                </div>
+                                <div class="form_disclaimer">
+                                    <img src="/crecer-seguros/assets/ico__danger-f880c03f.svg" alt="ico danger" width="24" height="21">
+                                    *Si no tienes un funcionario asignado puedes dejar estos campos opcionales 
+                                </div>
+                            </section>
+
+                            <h3>Documentos</h3>
+                            <section>
+                                <div class="app_title">
+                                    <p><strong>Documentos</strong></p>
+                                    <p>Adjunte los documentos</p>
+                                </div>
+                                <div class="form_upload">
+                                    <div class="form_upload_select">
+                                        <input id="file" type="file" accept="image/jpeg,application/pdf" class="form_control form_control__file" name="file" required>
+                                        <div id="openFile" class="form_upload_mask btn">
+                                            <img src="/crecer-seguros/assets/ico__upload-98d22496.svg" alt="ico upload" width="20" height="20">
+                                            Seleccione un archivo
+                                        </div>
+                                    </div>
+                                    <div class="form_upload_preview">
+                                        <p>Nombre-archivo.jpg</p>
+                                        <span>124kb</span>
+                                        <div id="closePreview" class="form_upload_preview_close">
+                                            <img src="/crecer-seguros/assets/ico__close_preview-06973f41.svg" alt="ico close preview" width="18" height="18">
+                                        </div>
+                                    </div>
+                                    <div class="form_upload_upload">
+                                        <button id="uploadFile" class="form_upload_mask btn">
+                                            <img src="/crecer-seguros/assets/ico__more-f5494116.svg" alt="ico more" width="20" height="20">
+                                            Subir archivo
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form_table">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Nombre</th>
+                                                <th scope="col">Fecha</th>
+                                                <th scope="col">Acción</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="item">
+                                                <td data-label="N°">1</td>
+                                                <td data-label="Nombre">2222222_2023718054552.pdf</td>
+                                                <td data-label="Fecha">14/08/2023</td>
+                                                <td data-label="Acción">
+                                                    <div class="box">
+                                                        <button class="btn btn__small btn__white" data-id="">
+                                                            <img src="/crecer-seguros/assets/ico__trash-508e675f.svg" alt="ico trash" width="16" height="25">
+                                                        </button>
+                                                        <button class="btn btn__small btn__white" data-id="">
+                                                            <img src="/crecer-seguros/assets/ico__search-e8280ad6.svg" alt="ico trash" width="16" height="25">
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr id="middle"></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </section>
+
+                            <h3>Detalle</h3>
+                            <section>
+                                <div class="app_title">
+                                    <p><strong>Detalle</strong></p>
+                                    <p>Ingresa otros datos y los disclaimers.</p>
+                                </div>
+                                <div class="form form__area">
+                                    <div class="form_box">
+                                        <textarea class="form_control form_control__area" placeholder="Comentarios" name="textarea_details"></textarea>
+                                    </div>
+                                    <div class="form_box">
+                                        <input class="checkbox" id="accept_mail" type="checkbox" />
+                                        <label class="checkbox_label" for="accept_mail">
+                                            <span>Acepto recibir la respuesta por correo electrónico.</span>
+                                        </label>
+                                    </div>
+                                    <div class="form_box">
+                                        <input class="checkbox" id="accept_phone" type="checkbox" />
+                                        <label class="checkbox_label" for="accept_phone">
+                                            <span>Acepto recibir comunicaciones telefónicas referente a este reporte de siniestro.</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer_box">
+              Crecer Seguros S.A. Compañía de Seguros - RUC 20600098633 - <a href="www.crecerseguros.pe" target="_blank"><strong>www.crecerseguros.pe</strong></a>
+            </div>
+            <div class="footer_box footer_box__line"></div>
+            <div class="footer_box footer_box__follow">
+              <p><strong>Siguenos en:</strong></p>
+              <div class="footer_box_social">
+                <a href="" target="_blank"><img src="/crecer-seguros/assets/ico__facebook-56a9cd2c.svg" alt="ico facebook" width="28" height="28"></a>
+                <a href="" target="_blank"><img src="/crecer-seguros/assets/ico__instagram-8d587570.svg" alt="ico instagram" width="28" height="28"></a>
+                <a href="" target="_blank"><img src="/crecer-seguros/assets/ico__linkedin-0ad11d68.svg" alt="ico linkedin" width="28" height="28"></a>
+              </div>
+            </div>
+        </footer>
+        
+        <div class="overlay"></div>
+        <div class="modal modal__thanks" id="modalThanksRegisterApplication">
+            <div class="modal_dialog"> 
+                <div class="modal_content">
+                    <div class="modal_header">
+                        <img class="modal_close" src="/crecer-seguros/assets/ico__modal_close-6360c24f.svg" alt="ico modal close" width="42" height="42">
+                    </div>
+                    <div class="modal_body">
+                        <img src="/crecer-seguros/assets/thanks-23377ee1.svg" alt="thanks" width="110" height="110">
+                        <h2>Tu Solicitud</h2>
+                        <p><strong>N°9999999 ha sido registrada correctamente.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/localization/messages_es_PE.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.js"></script>
+        
+  </body>
+</html>

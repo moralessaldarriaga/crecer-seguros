@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Crecer Seguros</title>
+    <script type="module" crossorigin src="/crecer-seguros/assets/main-36ad0b92.js"></script>
+    <link rel="stylesheet" href="/crecer-seguros/assets/index-fc376792.css">
+  </head>
+  <body>
+        <main>
+            <div class="app">
+                <div class="app_menu">
+                    <img src="/crecer-seguros/assets/logo-0c237096.svg" alt="logo crecer seguros" width="170" height="54">
+                    <nav class="menu">
+                        <ul>
+                            <li>
+                                <a href="dashboard.html">
+                                    <span><img src="/crecer-seguros/assets/ico__home-bff1f330.svg" alt="ico home" width="21" height="21"></span>
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-datos.html" class="active">
+                                    <span><img src="/crecer-seguros/assets/ico__datos-c6d9c3a5.svg" alt="ico datos" width="21" height="21"></span>
+                                    Mis datos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-registro.html">
+                                    <span><img src="/crecer-seguros/assets/ico__solicitud-1580a9bc.svg" alt="ico solicitud" width="21" height="21"></span>
+                                    Registro <br> de solicitud
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-tramite.html">
+                                    <span><img src="/crecer-seguros/assets/ico__tramites-5246c694.svg" alt="ico tramite" width="21" height="21"></span>
+                                    Mis trámites
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="menuMobile">
+                        <img id="openMenu" src="/crecer-seguros/assets/ico__burguer-9cfde423.svg" alt="ico burguer" width="19" height="16">
+                        <img id="closeMenu" src="/crecer-seguros/assets/ico__close-8599f270.svg" alt="ico close" width="30" height="30">
+                    </div>
+                    <div class="mobile">
+                        <nav class="menu">
+                            <ul>
+                                <li>
+                                    <a href="dashboard.html">
+                                        <span><img src="/crecer-seguros/assets/ico__home-bff1f330.svg" alt="ico home" width="21" height="21"></span>
+                                        Inicio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboard-datos.html" class="active">
+                                        <span><img src="/crecer-seguros/assets/ico__datos-c6d9c3a5.svg" alt="ico datos" width="21" height="21"></span>
+                                        Mis datos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboard-registro.html">
+                                        <span><img src="/crecer-seguros/assets/ico__solicitud-1580a9bc.svg" alt="ico solicitud" width="21" height="21"></span>
+                                        Registro de solicitud
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboard-tramite.html">
+                                        <span><img src="/crecer-seguros/assets/ico__tramites-5246c694.svg" alt="ico tramite" width="21" height="21"></span>
+                                        Mis trámites
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="app_content">
+                    <div class="app_breadcrumb">
+                        <span>Inicio</span>
+                        <span>Mis datos</span>
+                    </div>
+                    <div class="app_title">
+                        <p class="p_blue"><strong>Hola,</strong> Sabrina necesitamos conocer los detalles de tu seguro.</p>
+                        <p>Aquí podrás actualizar tus datos.</p>
+                    </div>
+                    <form id="formRegisterData" class="form form__register form__validate" action="">
+                        <div class="form_box">
+                          <select class="form_control form_control__select" name="type_document" required>
+                            <option value="0" selected disabled>Selecciona</option>
+                            <option value="1">DNI</option>
+                            <option value="2">Carnet de extranjeria</option>
+                          </select>
+                        </div>
+                        <div class="form_box">
+                          <input type="email" class="form_control form_control__input" name="mail" placeholder="Correo" required>
+                        </div>
+                        <div class="form_box">
+                            <input type="tel" class="form_control form_control__input" name="number" placeholder="Nro. Documento" required>
+                        </div>
+                        <div class="form_box">
+                            <input type="password" class="form_control form_control__input" name="password" placeholder="Contraseña" autocomplete="off" required>
+                        </div>
+                        <div class="form_box">
+                            <input type="text" class="form_control form_control__input" name="name" placeholder="Nombre" required>
+                        </div>
+                        <div class="form_box">
+                            <input type="text" class="form_control form_control__input" name="address" placeholder="Dirección Declarante" required>
+                        </div>
+                        <div class="form_box">
+                            <input type="text" class="form_control form_control__input" name="fullname" placeholder="Ap. Paterno" required>
+                        </div>
+                        <div class="form_box">
+                            <select class="form_control form_control__select" name="departamento" required>
+                                <option value="0" selected disabled>Departamento</option>
+                            </select>
+                        </div>
+                        <div class="form_box">
+                            <input type="text" class="form_control form_control__input" name="fullname2" placeholder="Ap. Materno" required>
+                        </div>
+                        <div class="form_box">
+                            <select class="form_control form_control__select" name="Provincia" required>
+                                <option value="0" selected disabled>Provincia</option>
+                            </select>
+                        </div>
+                        <div class="form_box">
+                            <input type="tel" class="form_control form_control__input" name="phone" placeholder="Celular" required>
+                        </div>
+                        <div class="form_box">
+                            <select class="form_control form_control__select" name="distrito" required>
+                                <option value="0" selected disabled>Distrito</option>
+                            </select>
+                        </div>
+                        <div class="form_box form_box__big">
+                            <input class="checkbox" id="terms" type="checkbox" />
+                            <label class="checkbox_label" for="terms">
+                                <span>Acepto los <a href="#" target="_blank">Términos y condiciones</a></span>
+                            </label>
+                        </div>
+                        <div class="form_btn form_btn__row">
+                          <button type="submit" class="btn btn__yellow">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer_box">
+              Crecer Seguros S.A. Compañía de Seguros - RUC 20600098633 - <a href="www.crecerseguros.pe" target="_blank"><strong>www.crecerseguros.pe</strong></a>
+            </div>
+            <div class="footer_box footer_box__line"></div>
+            <div class="footer_box footer_box__follow">
+              <p><strong>Siguenos en:</strong></p>
+              <div class="footer_box_social">
+                <a href="" target="_blank"><img src="/crecer-seguros/assets/ico__facebook-56a9cd2c.svg" alt="ico facebook" width="28" height="28"></a>
+                <a href="" target="_blank"><img src="/crecer-seguros/assets/ico__instagram-8d587570.svg" alt="ico instagram" width="28" height="28"></a>
+                <a href="" target="_blank"><img src="/crecer-seguros/assets/ico__linkedin-0ad11d68.svg" alt="ico linkedin" width="28" height="28"></a>
+              </div>
+            </div>
+        </footer>
+
+        <div class="overlay"></div>
+        <div class="modal modal__thanks" id="modalThanksRegisterData">
+            <div class="modal_dialog"> 
+                <div class="modal_content">
+                    <div class="modal_header">
+                        <img class="modal_close" src="/crecer-seguros/assets/ico__modal_close-6360c24f.svg" alt="ico modal close" width="42" height="42">
+                    </div>
+                    <div class="modal_body">
+                        <img src="/crecer-seguros/assets/thanks-23377ee1.svg" alt="thanks" width="110" height="110">
+                        <h2>Muchas gracias</h2>
+                        <p><strong>Tu información ha sido guardada correctamente.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/localization/messages_es_PE.min.js"></script>
+        
+  </body>
+</html>
