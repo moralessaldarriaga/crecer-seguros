@@ -83,7 +83,7 @@
                     </div>
                     <form id="formSteps" class="form__validate" action="">      
                         <div>
-                            <h3>Declarante</h3>
+                            <!-- <h3>Declarante</h3>
                             <section>
                                 <div class="app_title">
                                     <p><strong>Declarante</strong></p>
@@ -93,18 +93,19 @@
                                     <div class="form_box">
                                         <input type="text" class="form_control form_control__input" name="name_application" placeholder="Nombre*" required>
                                     </div>
+                    
+                                    <div class="form_box">
+                                        <input type="text" class="form_control form_control__input" name="fullname_application" placeholder="Apellido paterno*" required>
+                                    </div>
+                                    <div class="form_box">
+                                        <input type="text" class="form_control form_control__input" name="fullname2_application" placeholder="Apellido materno*" required>
+                                    </div>
                                     <div class="form_box">
                                         <select class="form_control form_control__select" name="parent_application" required>
                                             <option value="0" selected disabled>Parentesco*</option>
                                             <option value="1">...</option>
                                             <option value="2">...</option>
                                         </select>
-                                    </div>
-                                    <div class="form_box">
-                                        <input type="text" class="form_control form_control__input" name="fullname_application" placeholder="Apellido paterno*" required>
-                                    </div>
-                                    <div class="form_box">
-                                        <input type="text" class="form_control form_control__input" name="fullname2_application" placeholder="Apellido materno*" required>
                                     </div>
                                     <div class="form_box">
                                         <select class="form_control form_control__select" name="type_document_application" required>
@@ -244,10 +245,10 @@
                                     </div>
                                 </div>
                                 <div class="form_disclaimer">
-                                    <img src="/crecer-seguros/assets/ico__danger-f880c03f.svg" alt="ico danger" width="24" height="21">
+                                    <img src="/src/images/ico/ico__danger.svg" alt="ico danger" width="24" height="21">
                                     *Si no tienes un funcionario asignado puedes dejar estos campos opcionales 
                                 </div>
-                            </section>
+                            </section> -->
 
                             <h3>Documentos</h3>
                             <section>
@@ -271,10 +272,10 @@
                                         </div>
                                     </div>
                                     <div class="form_upload_upload">
-                                        <button id="uploadFile" class="form_upload_mask btn">
+                                        <a href="#" id="uploadFile" class="form_upload_mask btn">
                                             <img src="/crecer-seguros/assets/ico__more-f5494116.svg" alt="ico more" width="20" height="20">
                                             Subir archivo
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="form_table">
