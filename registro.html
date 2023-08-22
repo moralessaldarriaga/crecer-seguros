@@ -5,41 +5,47 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Crecer Seguros</title>
-    <script type="module" crossorigin src="/crecer-seguros/assets/main-36ad0b92.js"></script>
+    <script type="module" crossorigin src="/crecer-seguros/assets/main-f92ec64b.js"></script>
     <link rel="stylesheet" href="/crecer-seguros/assets/index-fc376792.css">
   </head>
   <body>
     <main>
       <div class="login login__register">
-        <img src="/crecer-seguros/assets/logo-0c237096.svg" alt="logo crecer seguros" width="170" height="54">
+        <img src="/crecer-seguros/assets/logo-0c237096.svg" alt="logo crecer seguros" width="250" height="78">
         <div class="register">
             <h1>Regístrate</h1>
             <p>Ingresa los siguientes datos:</p>
             <form id="formRegister" class="form form__register form__validate" action="">
                 <div class="form_box">
+                    <input type="text" class="form_control form_control__input" name="name" placeholder="Nombre" required>
+                </div>
+                <div class="form_box">
+                    <input type="text" class="form_control form_control__input" name="fullname" placeholder="Ap. Paterno" required>
+                </div>
+                <div class="form_box">
+                  <input type="text" class="form_control form_control__input" name="fullname2" placeholder="Ap. Materno" required>
+                </div>
+                <div class="form_box">
                   <select class="form_control form_control__select" name="type_document" required>
-                    <option value="0" selected disabled>Selecciona</option>
+                    <option value="0" selected disabled>Tipo de documento</option>
                     <option value="1">DNI</option>
                     <option value="2">Carnet de extranjeria</option>
                   </select>
                 </div>
                 <div class="form_box">
-                  <input type="text" class="form_control form_control__input" name="mail" placeholder="Correo" required>
+                  <input type="tel" class="form_control form_control__input" name="number" placeholder="Nro. Documento" required>
                 </div>
                 <div class="form_box">
-                    <input type="tel" class="form_control form_control__input" name="number" placeholder="Nro. Documento" required>
+                  <input type="text" class="form_control form_control__input" name="mail" placeholder="Correo" required>
                 </div>
                 <div class="form_box">
                     <input type="password" class="form_control form_control__input" name="password" placeholder="Contraseña" required>
                 </div>
                 <div class="form_box">
-                    <input type="text" class="form_control form_control__input" name="name" placeholder="Nombre" required>
+                  <input type="text" class="form_control form_control__input" name="address" placeholder="Dirección Declarante" required>
                 </div>
                 <div class="form_box">
-                    <input type="text" class="form_control form_control__input" name="address" placeholder="Dirección Declarante" required>
-                </div>
-                <div class="form_box">
-                    <input type="text" class="form_control form_control__input" name="fullname" placeholder="Ap. Paterno" required>
+                    <input type="tel" class="form_control form_control__input" name="phone" placeholder="Celular" required>
                 </div>
                 <div class="form_box">
                     <select class="form_control form_control__select" name="departamento" required>
@@ -48,16 +54,10 @@
                     </select>
                 </div>
                 <div class="form_box">
-                    <input type="text" class="form_control form_control__input" name="fullname2" placeholder="Ap. Materno" required>
-                </div>
-                <div class="form_box">
                     <select class="form_control form_control__select" name="Provincia" required>
                         <option value="0" selected disabled>Provincia</option>
                         <option value="1">1</option>
                     </select>
-                </div>
-                <div class="form_box">
-                    <input type="tel" class="form_control form_control__input" name="phone" placeholder="Celular" required>
                 </div>
                 <div class="form_box">
                     <select class="form_control form_control__select" name="distrito" required>
@@ -66,7 +66,7 @@
                     </select>
                 </div>
                 <div class="form_box form_box__big">
-                    <input class="checkbox" id="terms" type="checkbox" />
+                    <input class="checkbox" id="terms" type="checkbox" name="terms" required>
                     <label class="checkbox_label" for="terms">
                         <span>Acepto los <a href="#" target="_blank">Términos y condiciones</a></span>
                     </label>
@@ -103,9 +103,9 @@
       <div class="footer_box footer_box__follow">
         <p><strong>Siguenos en:</strong></p>
         <div class="footer_box_social">
-          <a href="" target="_blank"><img src="/crecer-seguros/assets/ico__facebook-56a9cd2c.svg" alt="ico facebook" width="28" height="28"></a>
-          <a href="" target="_blank"><img src="/crecer-seguros/assets/ico__instagram-8d587570.svg" alt="ico instagram" width="28" height="28"></a>
-          <a href="" target="_blank"><img src="/crecer-seguros/assets/ico__linkedin-0ad11d68.svg" alt="ico linkedin" width="28" height="28"></a>
+          <a href="https://www.facebook.com/CrecerSegurosPeru" target="_blank"><img src="/crecer-seguros/assets/ico__facebook-56a9cd2c.svg" alt="ico facebook" width="28" height="28"></a>
+          <a href="https://www.instagram.com/crecerseguros.pe/" target="_blank"><img src="/crecer-seguros/assets/ico__instagram-8d587570.svg" alt="ico instagram" width="28" height="28"></a>
+          <a href="https://www.linkedin.com/company/crecer-seguros-compa%C3%B1%C3%ADa-de-seguros/" target="_blank"><img src="/crecer-seguros/assets/ico__linkedin-0ad11d68.svg" alt="ico linkedin" width="28" height="28"></a>
         </div>
       </div>
     </footer>
