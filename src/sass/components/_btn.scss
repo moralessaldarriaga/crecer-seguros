@@ -1,0 +1,33 @@
+.btn{
+    cursor: pointer;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: .5rem;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    color: var(--color-white);
+    font-weight: bold;
+
+    &__yellow{
+        color: var(--color-black);
+        background-color: var(--three-color);
+    }
+
+    &__lightblue{
+        color: var(--color-black);
+        background-color: var(--second-color);
+    }
+
+    &__white{
+        background-color: var(--color-white);
+    }
+
+    &__big{
+        width: 100%;
+    }
+
+    &__small{
+        padding: 6px;
+    }
+}

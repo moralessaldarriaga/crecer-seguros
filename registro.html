@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Crecer Seguros</title>
+  </head>
+  <body>
+    <main>
+      <div class="login login__register">
+        <img src="/src/images/logo.svg" alt="logo crecer seguros" width="170" height="54">
+        <div class="register">
+            <h1>Regístrate</h1>
+            <p>Ingresa los siguientes datos:</p>
+            <form id="formRegister" class="form form__register form__validate" action="">
+                <div class="form_box">
+                  <select class="form_control form_control__select" name="type_document" required>
+                    <option value="0" selected disabled>Selecciona</option>
+                    <option value="1">DNI</option>
+                    <option value="2">Carnet de extranjeria</option>
+                  </select>
+                </div>
+                <div class="form_box">
+                  <input type="text" class="form_control form_control__input" name="mail" placeholder="Correo" required>
+                </div>
+                <div class="form_box">
+                    <input type="tel" class="form_control form_control__input" name="number" placeholder="Nro. Documento" required>
+                </div>
+                <div class="form_box">
+                    <input type="password" class="form_control form_control__input" name="password" placeholder="Contraseña" required>
+                </div>
+                <div class="form_box">
+                    <input type="text" class="form_control form_control__input" name="name" placeholder="Nombre" required>
+                </div>
+                <div class="form_box">
+                    <input type="text" class="form_control form_control__input" name="address" placeholder="Dirección Declarante" required>
+                </div>
+                <div class="form_box">
+                    <input type="text" class="form_control form_control__input" name="fullname" placeholder="Ap. Paterno" required>
+                </div>
+                <div class="form_box">
+                    <select class="form_control form_control__select" name="departamento" required>
+                        <option value="0" selected disabled>Departamento</option>
+                        <option value="1">1</option>
+                    </select>
+                </div>
+                <div class="form_box">
+                    <input type="text" class="form_control form_control__input" name="fullname2" placeholder="Ap. Materno" required>
+                </div>
+                <div class="form_box">
+                    <select class="form_control form_control__select" name="Provincia" required>
+                        <option value="0" selected disabled>Provincia</option>
+                        <option value="1">1</option>
+                    </select>
+                </div>
+                <div class="form_box">
+                    <input type="tel" class="form_control form_control__input" name="phone" placeholder="Celular" required>
+                </div>
+                <div class="form_box">
+                    <select class="form_control form_control__select" name="distrito" required>
+                        <option value="0" selected disabled>Distrito</option>
+                        <option value="1">1</option>
+                    </select>
+                </div>
+                <div class="form_box form_box__big">
+                    <input class="checkbox" id="terms" type="checkbox" />
+                    <label class="checkbox_label" for="terms">
+                        <span>Acepto los <a href="#" target="_blank">Términos y condiciones</a></span>
+                    </label>
+                </div>
+                <div class="form_btn form_btn__row">
+                  <button type="submit" class="btn btn__yellow">Enviar</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </main>
+
+    <div class="overlay"></div>
+    <div class="modal modal__thanks" id="modalThanksRegister">
+      <div class="modal_dialog"> 
+          <div class="modal_content">
+              <div class="modal_header">
+                  <img class="modal_close" src="/src/images/ico/ico__modal_close.svg" alt="ico modal close" width="42" height="42">
+              </div>
+              <div class="modal_body">
+                  <img src="/src/images/thanks.svg" alt="thanks" width="110" height="110">
+                  <h2>Muchas gracias</h2>
+                  <p><strong>Tu usuario ha sido creado con éxito.</strong></p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer_box">
+        Crecer Seguros S.A. Compañía de Seguros - RUC 20600098633 - <a href="www.crecerseguros.pe" target="_blank"><strong>www.crecerseguros.pe</strong></a>
+      </div>
+      <div class="footer_box footer_box__line"></div>
+      <div class="footer_box footer_box__follow">
+        <p><strong>Siguenos en:</strong></p>
+        <div class="footer_box_social">
+          <a href="" target="_blank"><img src="/src/images/ico/ico__facebook.svg" alt="ico facebook" width="28" height="28"></a>
+          <a href="" target="_blank"><img src="/src/images/ico/ico__instagram.svg" alt="ico instagram" width="28" height="28"></a>
+          <a href="" target="_blank"><img src="/src/images/ico/ico__linkedin.svg" alt="ico linkedin" width="28" height="28"></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/localization/messages_es_PE.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

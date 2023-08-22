@@ -4,288 +4,61 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <title>Moderna</title>
+    <title>Crecer Seguros</title>
   </head>
   <body>
     <main>
-      <section class="top">
-        <div class="main_content">
-          <div class="top_container">
-            <img src="/src/images/top_mensaje.png" alt="compra tu lote hoy" width="400" height="40">
-            <a href="javascript:;" class="btn" rel="noopener noreferrer">Ver proyectos →</a>
+      <div class="login">
+        <img src="/src/images/logo.svg" alt="logo crecer seguros" width="170" height="54">
+        <h2><strong>¡Hola!, necesitamos conocer los detalles de tu seguro,</strong> de acuerdo al tipo de emergencia seleccionada.</h2>
+        <p><strong>Ingresa tus credenciales</strong> para acceder a nuestros servicios online.</p>
+        <form id="formLogin" class="form form__login form__validate" action="">
+          <div class="form_box">
+            <img src="/src/images/ico/ico__document.svg" alt="ico document" width="28" height="28">
+            <select class="form_control form_control__select" name="type_document" required>
+              <option value="0" selected disabled>Selecciona</option>
+              <option value="1">DNI</option>
+              <option value="2">Carnet de extranjeria</option>
+            </select>            
+            <label class="form_label">Tipo de documento</label>
           </div>
-        </div>
-      </section>
-
-      <nav class="menu">
-        <div class="main_content">
-          <div class="menu_container">
-            <a href="/" rel="noopener noreferrer">
-              <img src="/src/images/logo_moderna_vivienda.png" alt="logo moderna vivienda" width="203" height="31">
-            </a>
-            <ul>
-              <li>
-                <a href="/proyectos" rel="noopener noreferrer">Proyectos</a>
-              </li>
-              <li>
-                <a href="/refiere" rel="noopener noreferrer">Refiere y gana</a>
-              </li>
-              <li>
-                <a href="/nosotros" rel="noopener noreferrer">Nosotros</a>
-              </li>
-              <li>
-                <a href="/contacto" rel="noopener noreferrer">Contáctanos</a>
-              </li>
-              <li>
-                <a href="/blog" rel="noopener noreferrer">Blog</a>
-              </li>
-            </ul>
-            <div class="menu_actions">
-              <img class="menu_actions_open" src="/src/images/menu__open.png" alt="menu open" width="50" height="50">
-              <img class="menu_actions_close menu_actions__hide" src="/src/images/menu__close.png" alt="menu close" width="50" height="50">
-            </div>
+          <div class="form_box">
+            <img src="/src/images/ico/ico__number.svg" alt="ico number" width="28" height="28">
+            <input type="tel" class="form_control form_control__input" name="document" placeholder="Nro. Documento" required>
+            <label class="form_label">Nro. Documento</label>
           </div>
-        </div>
-      </nav>
-
-      <section class="nav">
-        <div class="main_content">
-          <ul>
-            <li>
-              <a href="">Proyectos</a>
-            </li>
-            <li>
-              <a href="">Refiere y gana</a>
-            </li>
-            <li>
-              <a href="">Nosotros</a>
-            </li>
-            <li>
-              <a href="">Contáctanos</a>
-            </li>
-            <li>
-              <a href="">Blog</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="banner">
-        <div class="banner_slider banner__js">
-          <div class="banner_item banner_item__paracas">
-            <div class="banner_item_info">
-              <picture>
-                <source media="(max-width:600px)" srcset="/src/images/banner/banner_info__paracas@2x.png" alt="banner info paracas" width="953" height="1049">
-                <img src="/src/images/banner/banner_info__paracas.png" alt="banner info paracas" width="1000" height="700">
-              </picture>
-            </div>
+          <div class="form_box">
+            <img src="/src/images/ico/ico__password.svg" alt="ico password" width="28" height="28">
+            <input type="password" class="form_control form_control__input" name="password" placeholder="Contraseña" required>
+            <label class="form_label">Contraseña</label>
           </div>
-          <div class="banner_item banner_item__moyobamba">
-            <div class="banner_item_info">
-              <picture>
-                <source media="(max-width:600px)" srcset="/src/images/banner/banner_info__moyobamba@2x.png" alt="banner info moyobamba" width="953" height="1049">
-                <img src="/src/images/banner/banner_info__moyobamba.png" alt="banner info moyobamba" width="1000" height="700">
-              </picture>
-            </div>
+          <a href="#" class="forgot">¿Olvidaste tu contraseña?</a>
+          <div class="form_btn">
+            <button type="submit" class="btn btn__big btn__yellow">Iniciar sesión</button>
+            <a href="registro.html" class="btn btn__big btn__lightblue">Regístrate</a>
           </div>
-        </div>
-      </section>
-
-      <section class="featured">
-        <div class="main_content">
-          <div class="featured_container">
-            <div class="featured_title">
-              <h1>Proyectos <span>destacados</span></h1>
-              <a href="javascript:;" class="btn" rel="noopener noreferrer">Ver todos →</a>
-            </div>
-            <div class="featured_projects">
-              <div class="featured_projects_item featured_projects_item__1">
-                <div class="featured_projects_item_top">
-                  <div class="featured_projects_item_top_left">
-                    <span class="step">Etapa de lanzamiento</span>
-                    <span class="point"><img src="/src/images/ico_map.png" alt="ico mapa">Ica - Paracas</span>
-                  </div>
-                </div>
-                <h2>Desde <br>S/ 20,000 <br>de Dscto.</h2>
-                <a href="/" rel="noopener noreferrer" class="btn btn__orange">
-                  <!-- <img src="/src/images/" alt=""> -->
-                  oasis del <br>Naranjal
-                  <div>→</div>
-                </a>
-              </div>
-              <div class="featured_projects_item featured_projects_item__2">
-                <div class="featured_projects_item_top">
-                  <div class="featured_projects_item_top_left">
-                    <span class="step">Primera etapa</span>
-                    <span class="point"><img src="/src/images/ico_map.png" alt="ico mapa">San Martín - Moyobamba</span>
-                  </div>
-                </div>
-                <h2>Desde <br>S/ 43,000 <br>de Dscto.</h2>
-                <a href="/" rel="noopener noreferrer" class="btn btn__orange">
-                  <!-- <img src="/src/images/" alt=""> -->
-                  orillas <br>del Mayo
-                  <div>→</div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <section class="invest">
-        <div class="main_content">
-          <div class="invest_container">
-            <div class="invest_info">
-              <img src="/src/images/invest__title.png" alt="invest title" width="765" height="129">
-              <p>Obtén tu lote ahora y descubre los increíbles beneficios que tenemos para ti:</p>
-              <div class="invest_info_block"> 
-                <div class="invest_info_block_item">
-                  <img src="/src/images/invest__1.png" alt="invest__1" width="86" height="86">
-                  <span>Adquiere crédito directo</span>
-                </div>
-                <div class="invest_info_block_item">
-                  <img src="/src/images/invest__2.png" alt="invest__2" width="86" height="86">
-                  <span>Paga hasta en 60 meses sin intereses</span>
-                </div>
-                <div class="invest_info_block_item">
-                  <img src="/src/images/invest__3.png" alt="invest__3" width="86" height="86">
-                  <span>Hasta el 100%de rentabilidad</span>
-                </div>
-                <div class="invest_info_block_item">
-                  <img src="/src/images/invest__4.png" alt="invest__4" width="86" height="86">
-                  <span>Si pagas al contado, pide tu descuento</span>
-                </div>
-              </div>
-              <a href="/" class="btn btn__big">Solicitar información →</a>
-            </div>
-            <picture class="invest_man">
-              <source media="(max-width:1300px)" srcset="/src/images/invest__man@2x.png" alt="invest man" width="354" height="437">
-              <img src="/src/images/invest__man.png" alt="invest man" width="700" height="800">
-            </picture>
-          </div>
-        </div>
-      </section>
-
-      <section class="outstanding">
-        <div class="main_content">
-          <div class="outstanding_container">
-            <div class="outstanding_info">
-              <h2>Con el <br>respaldo de</h2>
-              <img src="/src/images/logo_moderna_vivienda__black.png" alt="logo moderna vivienda" width="371" height="45">
-              <p>Invierte pensando en tu futuro y el de tu familia.
-              <br><b>¡Compra tu lote altoque!</b></p>
-              <a href="" rel="noopener noreferrer" class="btn">Conoce más →</a>
-            </div>
-            <img src="/src/images/respaldo__info.png" alt="respaldo info" width="699" height="585">
-          </div>
-        </div>
-      </section>
-
-      <section class="buy">
-        <div class="main_content">
-          <div class="buy_container">
-            <picture class="buy_girl">
-              <source media="(max-width:1300px)" srcset="/src/images/buy__title.png" alt="buy title" width="630" height="88">
-              <img src="/src/images/buy__girl.png" alt="buy girl" width="728" height="824">
-            </picture>
-            <form class="form form__buy" id="form">
-              <h2>Quiero recibir información</h2>
-              <div class="form_block">
-                <div class="form_group">
-                  <input type="text" class="form_control form_control__light" placeholder="Nombres" name="name" required>
-                </div>
-                <div class="form_group">
-                  <input type="text" class="form_control form_control__light" placeholder="Apellidos" name="fullname" required>
-                </div>
-                <div class="form_group">
-                  <input type="email" class="form_control form_control__light" placeholder="Correo Electrónico" name="email" required>
-                </div>
-                <div class="form_group">
-                  <select class="form_control form_control__light select" name="type_document" required>
-                    <option value="0" selected disabled>Documento</option>
-                    <option value="1">DNI</option>
-                    <option value="2">Carnet de extranjeria</option>
-                  </select>
-                </div>
-                <div class="form_group">
-                  <input type="text" class="form_control form_control__light" placeholder="No. documento" name="number_document" required>
-                </div>
-                <div class="form_group">
-                  <input type="tel" class="form_control form_control__light" placeholder="Teléfono" id="phone" name="phone" required>
-                </div>
-                <div class="form_group">
-                  <select class="form_control form_control__light select" name="type_document" required>
-                    <option value="0" selected disabled>¿Dónde quieres vivir?</option>
-                    <option value="1">DNI</option>
-                    <option value="2">Carnet de extranjeria</option>
-                  </select>
-                </div>
-                <div class="form_group">
-                  <input type="checkbox" id="terms_1" name="terms_1" value="terms_1">
-                  <label for="terms_1">He leído y acepto los <a href="" target="_blank">Términos y Condiciones</a> y la <a href="" target="_blank">Política de Privacidad</a></label>
-                </div>
-                <div class="form_group">
-                  <input type="checkbox" id="terms_2" name="terms_2" value="terms_2">
-                  <label for="terms_2">Acepto el envío de Publicidad según <a href="" target="_blank">Política de Privacidad</a></label>
-                </div>
-                <div class="form_group">
-                  <input type="checkbox" id="terms_3" name="terms_3" value="terms_3">
-                  <label for="terms_3">Acepto el perfilamiento según <a href="" target="_blank">Política de Privacidad</a></label>
-                </div>
-                <div class="form_group">
-                  <a href="" class="btn">Solicitar información →</a>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
+        </form>
+      </div>
     </main>
 
     <footer class="footer">
-      <div class="footer_top">
-        <div class="footer_top">
-          <div class="main_content">
-            <div class="footer_top_block">
-              <div class="footer_item">
-                <img src="/src/images/logo_moderna_vivienda.png" alt="logo moderna vivienda" width="203" height="31">
-                <a href="" rel="noopener noreferrer">Proyectos</a>
-                <a href="" rel="noopener noreferrer">Refiere y gana</a>
-              </div>
-              <div class="footer_item">
-                <a href="" rel="noopener noreferrer">Términos y condiciones</a>
-                <a href="" rel="noopener noreferrer">Políticas de Privacidad</a>
-                <div class="footer_item_shared">
-                  <a href="" rel="noopener noreferrer">
-                    <img src="/src/images/facebook.png" alt="facebook" width="39" height="39">
-                  </a>
-                  <a href="" rel="noopener noreferrer">
-                    <img src="/src/images/insta.png" alt="instagram" width="39" height="39">
-                  </a>
-                  <a href="" rel="noopener noreferrer">
-                    <img src="/src/images/tiktok.png" alt="tiktok" width="39" height="39">
-                  </a>
-                </div>
-              </div>
-              <div class="footer_item">
-                <img src="/src/images/logo_moderna_vivienda__black.png" alt="logo moderna vivienda" width="203" height="31">
-                <img src="/src/images/ico__book.png" alt="ico book" width="33" height="23">
-                <a href="" rel="noopener noreferrer">Libro de reclamaciones</a>
-                <a href="" rel="noopener noreferrer">Contacto</a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="footer_box">
+        Crecer Seguros S.A. Compañía de Seguros - RUC 20600098633 - <a href="www.crecerseguros.pe" target="_blank"><strong>www.crecerseguros.pe</strong></a>
       </div>
-      <div class="footer_bottom">
-        <div class="main_content">
-          <div class="footer_bottom_block">
-            <p>Copyright 2023 Modernavivienda.pe - Todos los derechos reservados</p>
-            <p>Hecho por Aliada.</p>
-          </div>
+      <div class="footer_box footer_box__line"></div>
+      <div class="footer_box footer_box__follow">
+        <p><strong>Siguenos en:</strong></p>
+        <div class="footer_box_social">
+          <a href="" target="_blank"><img src="/src/images/ico/ico__facebook.svg" alt="ico facebook" width="28" height="28"></a>
+          <a href="" target="_blank"><img src="/src/images/ico/ico__instagram.svg" alt="ico instagram" width="28" height="28"></a>
+          <a href="" target="_blank"><img src="/src/images/ico/ico__linkedin.svg" alt="ico linkedin" width="28" height="28"></a>
         </div>
       </div>
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/localization/messages_es_PE.min.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

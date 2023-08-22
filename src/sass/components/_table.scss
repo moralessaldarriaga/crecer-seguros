@@ -1,0 +1,114 @@
+table{
+    padding: 0;
+    margin-top: 1rem;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: var(--font-second);
+    color: var(--color-black);
+
+    @media only screen and (max-width: 600px) {
+        table-layout: fixed;
+        border: 0;
+    }
+
+    &.procedure{
+        td, th{
+            &:nth-child(2){
+                width: auto;
+    
+                @media only screen and (max-width: 600px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .box{
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+
+        @media only screen and (max-width: 600px) {
+            place-content: center;
+        }
+    }
+
+
+    thead{
+        @media only screen and (max-width: 600px) {
+            border: none;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+    }
+
+    th{
+        background-color: var(--second-color);
+        border: 1px solid var(--color-white) !important;
+        color: var(--color-white);
+    }
+
+    td{
+        background-color: var(--eight-color);
+        border: 1px solid var(--color-white) !important;
+    }
+
+    td, th{
+        border: 1px solid var(--color-silver);
+        text-align: left;
+        padding: .5rem 1rem;
+
+        &:nth-child(2){
+            width: 60%;
+
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }
+        }
+
+        &:nth-child(3){
+            text-align: center;
+
+            @media only screen and (max-width: 600px) {
+                text-align: right;
+            }
+        }
+    }
+
+    tr{
+        @media only screen and (max-width: 600px) {
+            border-bottom: 3px solid var(--color-silver);
+            display: block;
+            margin-bottom: .625em;
+        }
+    }
+    
+    td{
+        @media only screen and (max-width: 600px) {
+            border-bottom: 1px solid var(--color-silver);
+            display: block;
+            font-size: .8em;
+            text-align: right;
+
+            &::before{
+                content: attr(data-label);
+                float: left;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            &:last-child{
+                border-bottom: 0;
+            }
+        }
+    }
+
+    tr:nth-child(even) {
+        background-color: var(--color-silver);
+    }
+}

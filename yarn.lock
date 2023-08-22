@@ -353,11 +353,6 @@ inherits@2:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
-intl-tel-input@^18.1.8:
-  version "18.1.8"
-  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-18.1.8.tgz#7ea7f03dae08624a01b608a8a7edef7584bfb2d0"
-  integrity sha512-dPrCYwmjkjJOMw0XfyET+jSvbS+GFh6sOAFV5NpHK+jQXoXz8xsQLAoLmzjGktl2o3QhgBhyLTaNGyN0ZEx3cA==
-
 is-binary-path@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/is-binary-path/-/is-binary-path-2.1.0.tgz#ea1f7f3b80f064236e83470f86c09c254fb45b09"
@@ -381,6 +376,16 @@ is-number@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
+
+jquery-steps@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/jquery-steps/-/jquery-steps-1.1.0.tgz#0ceee0b0d2e49143981ad120d458ed56ea8e1924"
+  integrity sha512-2ZODN30XpbdNgDiqydOCroTRVUeCBPx927l3p8SG7tsL1kmOkntg/jeiY9fjPqIff0cyelcwL/SZ+5hMaQyVmA==
+
+jquery-validation@^1.19.3:
+  version "1.19.5"
+  resolved "https://registry.yarnpkg.com/jquery-validation/-/jquery-validation-1.19.5.tgz#557495b7cad79716897057c4447ad3cd76fda811"
+  integrity sha512-X2SmnPq1mRiDecVYL8edWx+yTBZDyC8ohWXFhXdtqFHgU9Wd4KHkvcbCoIZ0JaSaumzS8s2gXSkP8F7ivg/8ZQ==
 
 jquery@^3.6.4:
   version "3.7.0"
@@ -536,16 +541,6 @@ semver@^6.0.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
-
-simplelightbox@^2.14.1:
-  version "2.14.1"
-  resolved "https://registry.yarnpkg.com/simplelightbox/-/simplelightbox-2.14.1.tgz#9fa0f41e4599e49b8dc2f92f8dc01cdca04bed4e"
-  integrity sha512-REeHJetP+vq4hbKDkTf8apu7jAYOHws7PWc1j30O0q79NMIrg9g72smCyKWNTFyZtWdEd7WEu9DIClaG42s3Xg==
-
-slick-carousel@^1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
-  integrity sha512-XB9Ftrf2EEKfzoQXt3Nitrt/IPbT+f1fgqBdoxO3W/+JYvtEOW6EgxnWfr9GH6nmULv7Y2tPmEX3koxThVmebA==
 
 "source-map-js@>=0.6.2 <2.0.0", source-map-js@^1.0.2:
   version "1.0.2"

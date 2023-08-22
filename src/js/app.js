@@ -1,166 +1,202 @@
-import $ from 'jquery';
-import 'slick-carousel';
-import 'simplelightbox/dist/simple-lightbox';
-import 'simplelightbox/src/simple-lightbox.scss';
-import intlTelInput from 'intl-tel-input';
-import 'intl-tel-input/build/css/intlTelInput.css';
+// import $ from 'jquery';
+// import 'jquery-steps/build/jquery.steps';
+// import 'jquery-validation';
+// import 'jquery-validation/dist/localization/messages_es_PE';
 
 // window.SimpleLightbox = SimpleLightbox;
 
 export const init = () => {
     $(function() {
+        const formLogin = $('#formLogin');
+        const formRegister = $('#formRegister');
+        const formRegisterData = $('#formRegisterData');
+        const formSteps = $('#formSteps');
+        const openMenu = $('#openMenu');
+        const tabsProcedure = $('.app_prodecure ul li a');
+        const modalClose = $('.modal_close');
+        const openModal = $('[data-target="modal"]');
+        // const closeMenu = $('#closeMenu');
 
-        const input = document.querySelector("#phone");
-
-        if (input !== null) {
-            intlTelInput(input, {
-                initialCountry: 'auto',
-                separateDialCode: true,
-                geoIpLookup: callback => {
-                    fetch("https://ipapi.co/json")
-                        .then(res => res.json())
-                        .then(data => callback(data.country_code))
-                        .catch(() => callback("us"));
+        // Form login
+        if(formLogin.length) {
+            formLogin.validate({
+                errorPlacement: function errorPlacement(error, element) {
+                    element.before(error);
                 },
-            });
-        }
-
-        const closeReferreds = () => {
-            $('.form_custom_data').on('click', '.form_custom_data_close', function() {
-                console.log($(this)); // $(this) se refiere al botón "x" que disparó el evento
-                $(this).closest('.form_custom_data_item').remove(); // Eliminar el elemento padre que contiene el botón "x"
-            });
-        }
-
-        const addReferreds = () => {
-            const btn = $('#addCustomReferred');
-            const targetElement = $('.form_custom_data');
-
-            btn.on('click', (e) => {
-                e.preventDefault();
-                const name = $('#nameReferred').val();
-                const fullName = $('#fullNameReferred').val();
-                const nDocument = $('#numberDocumentReferred').val();
-
-                const htmlReferred = `<div class="form_custom_data_item" data-name="${name}" data-fullname="${fullName}" data-document="${nDocument}">${name} ${fullName} <div class="form_custom_data_close">x</div></div>`;
-                const htmlReferredElement = $(htmlReferred);
-
-                $('.form_custom_label').removeClass('active');
-                targetElement.addClass('active');
-                htmlReferredElement.appendTo(targetElement);
-
-            });
-        }
-
-        const validCustomInputs = () => {
-            const $inputs = $('.form_control__custom');
-            const $button = $('#addCustomReferred');
+                highlight: function (element) {
+                    var el = $(element);
+                    const error_box = $('.error_box');
+                    el.siblings('.checkmark').addClass('checkmark__error');
+                    el.addClass('error');
+                    error_box.addClass('error_box__on');
           
-            const checkInputs = () => {
-              let allFilled = true;
-              $inputs.each((index, element) => {
-                if ($(element).val() === '') {
-                  allFilled = false;
-                  return false; // Para salir del bucle each si algún campo está vacío
+                },
+                unhighlight: function (element) {
+                    var el = $(element);
+                    el.removeClass('error');
+                    el.siblings('.checkmark').removeClass('checkmark__error');
+                },
+                submitHandler: function(form) {
+                    // $('.overlay').fadeIn();
+                    // $('.modal#modalThanks').fadeIn();
+                    form.submit();
                 }
-              });
+            }); 
+        }
+
+        // Form register
+        if(formRegister.length) {
+            formRegister.validate({
+                errorPlacement: function errorPlacement(error, element) {
+                    element.before(error);
+                },
+                highlight: function (element) {
+                    var el = $(element);
+                    const error_box = $('.error_box');
+                    el.siblings('.checkmark').addClass('checkmark__error');
+                    el.addClass('error');
+                    error_box.addClass('error_box__on');
           
-              // Agregar o eliminar la clase "disabled" en el botón según si todos los campos están llenos
-              if (allFilled) {
-                $button.addClass('active');
-              } else {
-                $button.removeClass('active');
-              }
-            };
+                },
+                unhighlight: function (element) {
+                    var el = $(element);
+                    el.removeClass('error');
+                    el.siblings('.checkmark').removeClass('checkmark__error');
+                },
+                submitHandler: function(form) {
+                    $('.overlay').fadeIn();
+                    $('.modal#modalThanksRegister').fadeIn();
+                    // form.submit();
+                }
+            }); 
+        }
+
+        //Form register data
+        if(formRegisterData.length) {
+            formRegisterData.validate({
+                errorPlacement: function errorPlacement(error, element) {
+                    element.before(error);
+                },
+                highlight: function (element) {
+                    var el = $(element);
+                    const error_box = $('.error_box');
+                    el.siblings('.checkmark').addClass('checkmark__error');
+                    el.addClass('error');
+                    error_box.addClass('error_box__on');
           
-            // Vincular el evento input a la función checkInputs
-            $inputs.on('input', checkInputs);
-        };
+                },
+                unhighlight: function (element) {
+                    var el = $(element);
+                    el.removeClass('error');
+                    el.siblings('.checkmark').removeClass('checkmark__error');
+                },
+                submitHandler: function(form) {
+                    $('.overlay').fadeIn();
+                    $('.modal#modalThanksRegisterData').fadeIn();
+                    // form.submit();
+                }
+            }); 
+        }
 
-        const addInputsInForm = () => {
-            const btnAddReferred = $('#addReferred');
-        
-            btnAddReferred.on('click', () => {
-              $('.form_custom_label').addClass('active');
-            //   validCustomInputs(); // Verificar los campos al mostrar el elemento
-            //   addReferreds();
-            });
-        };
+        //Form steps
+        if(formSteps.length) {
+            formSteps.validate({
+                errorPlacement: function errorPlacement(error, element) {
+                    element.before(error);
+                },
+                highlight: function (element) {
+                    var el = $(element);
+                    const error_box = $('.error_box');
+                    el.siblings('.checkmark').addClass('checkmark__error');
+                    el.addClass('error');
+                    error_box.addClass('error_box__on');
           
-        const slickLightBox = () => {
+                },
+                unhighlight: function (element) {
+                    var el = $(element);
+                    el.removeClass('error');
+                    el.siblings('.checkmark').removeClass('checkmark__error');
+                },
+                submitHandler: function(form) {
+                    $('.overlay').fadeIn();
+                    $('.modal#modalThanksRegisterData').fadeIn();
+                    // form.submit();
+                }
+            }); 
+        }
 
-            const gallery = $('.gallery__js');
-            const galleryItem = $('.gallery_photo_item');
+        if(formSteps.length) {
+            // const wizard = $("#formSteps").steps();
 
-            gallery.slick({
-                dots: false,
-                arrow: true,
-                infinite: false
-            })
+            formSteps.children("div").steps({
+                headerTag: "h3",
+                bodyTag: "section",
+                transitionEffect: "slideLeft",
+                labels: {
+                    finish: "Enviar",
+                    next: "Siguiente",
+                    previous: "Atrás"
+                },
+                onInit: function(event, currentIndex) {
 
-            galleryItem.each(function() {
-                const imageUrl = $(this).find('.gallery_photo_item_src').attr('src');
-                $(this).attr('data-src', imageUrl);
-            });
+                    const openFile = $('#openFile');
 
-            const lightbox = new SimpleLightbox('.gallery_photo_item', {
-                sourceAttr: 'data-src',
-            });
+                    $('.actions ul li a').addClass('btn');
+                    $('.actions ul li:last-child a').addClass('btn__yellow');
 
-            // const lightbox = new SimpleLightbox('.gallery_photo_item', {
-            //     // sourceAttr: 'data-src',
-            //     captionsData: (el) => el.querySelector('img').src,
-            // });
-
-            let totalSlides = gallery.slick('getSlick').slideCount;
-
-            const updateCounter = (currentSlide) => {
-                const currentPosition = currentSlide + 1;
-                $('.gallery_counter').text(`${currentPosition}/${totalSlides}`);
-              };
-
-            updateCounter(gallery.slick('slickCurrentSlide'));
-
-            gallery.on('afterChange', (event, slick, currentSlide) => {
-                updateCounter(currentSlide);
+                    openFile.on('click', function(e) {
+                        $('#file').click();
+                    });
+                },
+                onStepChanging: function (event, currentIndex, newIndex)
+                {
+                    formSteps.validate().settings.ignore = ":disabled,:hidden";
+                    return formSteps.valid();
+                },
+                onFinishing: function (event, currentIndex)
+                {
+                    formSteps.validate().settings.ignore = ":disabled";
+                    return formSteps.valid();
+                },
+                onFinished: function (event, currentIndex)
+                {
+                    formSteps.submit();
+                }
             });
         }
 
-        const sliderBanner = () => {
-            $('.banner__js').slick({
-                dots: false,
-                arrows: false,
-                autoplay: true,
-                autoplaySpeed: 4000,
-                infinite: true,
-                speed: 500,
-                fade: true,
-                cssEase: 'linear'
-            });
-        }
+        openMenu.on('click', function() {
+            $('.mobile').toggleClass('show');
+        });
 
-        const menu = () => {
-            $('.menu_actions_open').on('click', () => {
-                $('.menu_actions_open').addClass('menu_actions__hide');
-                $('.menu_actions_close').removeClass('menu_actions__hide');
+        tabsProcedure.on('click', function(e) {
+            e.preventDefault();
+            const isThis = $(this);
+            const isThisId = $(this).data('id');
+            
+            isThis.addClass('active');
+            isThis.parent().siblings().children().removeClass('active');
 
-                $('.nav').fadeIn('slow');
-            });
+            console.log(isThisId);
 
-            $('.menu_actions_close').on('click', () => {
-                $('.menu_actions_close').addClass('menu_actions__hide');
-                $('.menu_actions_open').removeClass('menu_actions__hide');
+            $('#' + isThisId).show();
+            $('#' + isThisId).siblings().hide();
 
-                $('.nav').fadeOut('slow');
-            });
-        }
+            // if(isThisId == 'dataApplication') {
+            //     $()
+            // }
+        });
 
-        slickLightBox();
-        sliderBanner();
-        addInputsInForm();
-        validCustomInputs(); // Verificar los campos al mostrar el elemento
-        addReferreds();
-        closeReferreds();
-        menu();
+        openModal.on('click', function(e) {
+
+            const isModalId = $(this).data('modal');
+            $('.overlay').fadeIn();
+            $('.modal#' + isModalId).fadeIn();
+        });
+
+        modalClose.on('click', function() {
+            $('.overlay').fadeOut();
+            $('.modal').fadeOut();
+        })
     });
 }

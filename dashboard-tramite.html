@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>Crecer Seguros</title>
+  </head>
+  <body>
+        <main>
+            <div class="app">
+                <div class="app_menu">
+                    <img src="/src/images/logo.svg" alt="logo crecer seguros" width="170" height="54">
+                    <nav class="menu">
+                        <ul>
+                            <li>
+                                <a href="dashboard.html">
+                                    <span><img src="/src/images/ico/ico__home.svg" alt="ico home" width="21" height="21"></span>
+                                    Inicio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-datos.html">
+                                    <span><img src="/src/images/ico/ico__datos.svg" alt="ico datos" width="21" height="21"></span>
+                                    Mis datos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-registro.html">
+                                    <span><img src="/src/images/ico/ico__solicitud.svg" alt="ico solicitud" width="21" height="21"></span>
+                                    Registro <br> de solicitud
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-tramite.html" class="active">
+                                    <span><img src="/src/images/ico/ico__tramites.svg" alt="ico tramite" width="21" height="21"></span>
+                                    Mis trámites
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div id="menuMobile">
+                        <img id="openMenu" src="/src/images/ico/ico__burguer.svg" alt="ico burguer" width="19" height="16">
+                        <img id="closeMenu" src="/src/images/ico/ico__close.svg" alt="ico close" width="30" height="30">
+                    </div>
+                    <div class="mobile">
+                        <nav class="menu">
+                            <ul>
+                                <li>
+                                    <a href="dashboard.html">
+                                        <span><img src="/src/images/ico/ico__home.svg" alt="ico home" width="21" height="21"></span>
+                                        Inicio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboard-datos.html">
+                                        <span><img src="/src/images/ico/ico__datos.svg" alt="ico datos" width="21" height="21"></span>
+                                        Mis datos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboard-registro.html" >
+                                        <span><img src="/src/images/ico/ico__solicitud.svg" alt="ico solicitud" width="21" height="21"></span>
+                                        Registro de solicitud
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="dashboard-tramite.html" class="active">
+                                        <span><img src="/src/images/ico/ico__tramites.svg" alt="ico tramite" width="21" height="21"></span>
+                                        Mis trámites
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="app_content">
+                    <div class="app_breadcrumb">
+                        <span>Inicio</span>
+                        <span>Mis trámites</span>
+                    </div>
+                    <div class="app_prodecure">
+                        <ul>
+                            <li>
+                                <a class="active" href="#" data-id="dataApplication">Mis solicitudes</a>
+                            </li>
+                            <li>
+                                <a href="#" data-id="dataCases">Mis casos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="form">
+                        <div class="form_table" id="dataApplication">
+                            <table class="procedure">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nro. Solicitud</th>
+                                        <th scope="col">Fec. Registro</th>
+                                        <th scope="col">Estado</th>
+                                        <th scope="col">Ramo</th>
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">Canal</th>
+                                        <th scope="col">Detalle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="item">
+                                        <td data-label="Nro. Solicitud">17875</td>
+                                        <td data-label="Fec. Registro">20/04/2023</td>
+                                        <td data-label="Estado">Atendido</td>
+                                        <td data-label="Ramo">Desgravamen</td>
+                                        <td data-label="Producto">Desgravamen tarjeta de crédito</td>
+                                        <td data-label="Canal">Intergraretail</td>
+                                        <td data-label="Detalle">
+                                            <div class="box">
+                                                <button class="btn btn__yellow" data-target="modal" data-modal="modalApplication">
+                                                    Revisar
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr id="middle"></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="form_table" id="dataCases">
+                            <table class="procedure">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Tipo Siniestro</th>
+                                        <th scope="col">F. Aviso de Siniestro</th>
+                                        <th scope="col">N° de Siniestro</th>
+                                        <th scope="col">Fecha Siniestro</th>
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">Estado</th>
+                                        <th scope="col">Documentos</th>
+                                        <th scope="col">Detalle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="item">
+                                        <td data-label="Tipo Siniestro">Datos lorem</td>
+                                        <td data-label="F. Aviso de Siniestro">Datos lorem</td>
+                                        <td data-label="N° de Siniestro">Datos lorem</td>
+                                        <td data-label="Fecha Siniestro">Datos lorem</td>
+                                        <td data-label="Producto">Datos lorem</td>
+                                        <td data-label="Estado">Datos lorem</td>
+                                        <td data-label="Documentos">
+                                            <div class="box">
+                                                <button class="btn btn__yellow" data-target="modal" data-modal="modalDocuments">
+                                                    Ver
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td data-label="Detalle">
+                                            <div class="box">
+                                                <button class="btn btn__yellow" data-target="modal" data-modal="modalSinister">
+                                                    Revisar
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr id="middle"></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer_box">
+              Crecer Seguros S.A. Compañía de Seguros - RUC 20600098633 - <a href="www.crecerseguros.pe" target="_blank"><strong>www.crecerseguros.pe</strong></a>
+            </div>
+            <div class="footer_box footer_box__line"></div>
+            <div class="footer_box footer_box__follow">
+              <p><strong>Siguenos en:</strong></p>
+              <div class="footer_box_social">
+                <a href="" target="_blank"><img src="/src/images/ico/ico__facebook.svg" alt="ico facebook" width="28" height="28"></a>
+                <a href="" target="_blank"><img src="/src/images/ico/ico__instagram.svg" alt="ico instagram" width="28" height="28"></a>
+                <a href="" target="_blank"><img src="/src/images/ico/ico__linkedin.svg" alt="ico linkedin" width="28" height="28"></a>
+              </div>
+            </div>
+        </footer>
+
+        <div class="overlay"></div>
+        <div class="modal modal__data_application" id="modalApplication">
+            <div class="modal_dialog"> 
+                <div class="modal_content">
+                    <div class="modal_header">
+                        <img class="modal_close" src="/src/images/ico/ico__modal_close.svg" alt="ico modal close" width="42" height="42">
+                    </div>
+                    <div class="modal_body">
+                        <h2>Datos de la solicitud</h2>
+                        <div class="modal_box">
+                            <div class="modal_box_number">
+                                <p><strong>N° Solicitud:</strong> 000000000123</p>
+                            </div>
+                            <div class="modal_box_fullname">
+                                <p><strong>Nombres y apellidos:</strong><br>Mónica Margarita Silva Oporto</p>
+                            </div>
+                            <div class="modal_box_label">
+                                <div class="modal_box_label_item">
+                                    <p><strong>Cobertura:</strong> Muerte accidental</p>
+                                </div>
+                                <div class="modal_box_label_item">
+                                    <p><strong>Teléfono:</strong> 98752001</p>
+                                </div>
+                                <div class="modal_box_label_item">
+                                    <p><strong>Tipo de documento:</strong> DNI</p>
+                                </div>
+                                <div class="modal_box_label_item">
+                                    <p><strong>Correo:</strong> canovacka@gmail.com</p>
+                                </div>
+                                <div class="modal_box_label_item">
+                                    <p><strong>Número de documento:</strong> 0999999</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal__data_application" id="modalDocuments">
+            <div class="modal_dialog"> 
+                <div class="modal_content">
+                    <div class="modal_header">
+                        <img class="modal_close" src="/src/images/ico/ico__modal_close.svg" alt="ico modal close" width="42" height="42">
+                    </div>
+                    <div class="modal_body">
+                        <h2>Lista de Documentos</h2>
+                        <div class="modal_list">
+                            <div class="modal_list_item">
+                                <p>Lista de Documentos Pendientes 1</p>
+                            </div>
+                            <div class="modal_list_item">
+                                <p>Lista de Documentos Pendientes 1</p>
+                            </div>
+                            <div class="modal_list_item">
+                                <p>Lista de Documentos Pendientes 1</p>
+                            </div>
+                            <div class="modal_list_item">
+                                <p>Lista de Documentos Pendientes 1</p>
+                            </div>
+                            <div class="modal_list_item">
+                                <p>Lista de Documentos Pendientes 1</p>
+                            </div>
+                            <div class="modal_list_item">
+                                <p>Lista de Documentos Pendientes 1</p>
+                            </div>
+                            <div class="modal_list_item">
+                                <p>Lista de Documentos Pendientes 1</p>
+                            </div>
+                            <div class="modal_list_item">
+                                <p>Lista de Documentos Pendientes 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal__data_application" id="modalSinister">
+            <div class="modal_dialog"> 
+                <div class="modal_content">
+                    <div class="modal_header">
+                        <img class="modal_close" src="/src/images/ico/ico__modal_close.svg" alt="ico modal close" width="42" height="42">
+                    </div>
+                    <div class="modal_body">
+                        <h2>Datos del Siniestro del Asegurado</h2>
+                        <div class="modal_box">
+                            <div class="modal_box_number">
+                                <p><strong>N° Solicitud:</strong> 000000000123</p>
+                                <p><strong>N° Poliza:</strong> 000000000123</p>
+                            </div>
+                            <div class="modal_box_fullname">
+                                <p><strong>Nombres y apellidos:</strong><br>Mónica Margarita Silva Oporto</p>
+                            </div>
+                            <div class="modal_box_label">
+                                <div class="modal_box_label_item">
+                                    <p><strong>DNI:</strong> Muerte accidental</p>
+                                </div>
+                                <div class="modal_box_label_item">
+                                    <p><strong>Suma asegurada final:</strong> 98752001</p>
+                                </div>
+                                <div class="modal_box_label_item">
+                                    <p><strong>Tipo de moneda:</strong> DNI</p>
+                                </div>
+                                <div class="modal_box_label_item">
+                                    <p><strong>Grupo producto:</strong> Vida ley</p>
+                                </div>
+                                <div class="modal_box_label_item">
+                                    <p><strong>Monto beneficiario:</strong> 0999999</p>
+                                </div>
+                                <div class="modal_box_label_item">
+                                    <p><strong>Producto:</strong> Vida ley</p>
+                                </div>
+                            </div>
+                            <div class="modal_box_info">
+                                <h3>Otra información</h3>
+                                <div class="modal_box_info_label">
+                                    <div class="modal_box_info_label_item">
+                                        <p><strong>Tipo de moneda:</strong> Soles</p>
+                                    </div>
+                                    <div class="modal_box_info_label_item">
+                                        <p><strong>Cobertura:</strong> Muerte accidental</p>
+                                    </div>
+                                    <div class="modal_box_info_label_item">
+                                        <p><strong>Monto beneficiario:</strong> 442.37</p>
+                                    </div>
+                                    <div class="modal_box_info_label_item">
+                                        <p><strong>Estado:</strong> Resuelto</p>
+                                    </div>
+                                    <div class="modal_box_info_label_item">
+                                        <p><strong>Suma Asegurada Final:</strong> 442.37</p>
+                                    </div>
+                                    <div class="modal_box_info_label_item">
+                                        <p><strong>Resolución:</strong> Aprobado</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/localization/messages_es_PE.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.js"></script>
+        <script type="module" src="/main.js"></script>
+  </body>
+</html>
