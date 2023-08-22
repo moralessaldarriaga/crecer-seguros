@@ -46,6 +46,7 @@ export const init = () => {
 
         // Form register
         if(formRegister.length) {
+            ignore: [':not(checkbox:hidden)'],
             formRegister.validate({
                 errorPlacement: function errorPlacement(error, element) {
                     element.before(error);
@@ -119,7 +120,7 @@ export const init = () => {
                 },
                 submitHandler: function(form) {
                     $('.overlay').fadeIn();
-                    $('.modal#modalThanksRegisterData').fadeIn();
+                    $('.modal#modalThanksRegisterApplication').fadeIn();
                     // form.submit();
                 }
             }); 
