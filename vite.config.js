@@ -8,11 +8,10 @@ export default defineConfig({
           input: {
             main: resolve(__dirname, 'index.html'),
             registro: resolve(__dirname, 'registro.html'),
-            // nosotros: resolve(__dirname, 'nosotros.html'),
-            // blog: resolve(__dirname, 'blog.html'),
-            // proyecto: resolve(__dirname, 'proyecto.html'),
-            // contacto: resolve(__dirname, 'contacto.html'),
-            // refiere: resolve(__dirname, 'refiere.html'),
+            dashboard: resolve(__dirname, 'dashboard.html'),
+            dashboard_tramite: resolve(__dirname, 'dashboard-tramite.html'),
+            dashboard_datos: resolve(__dirname, 'dashboard-datos.html'),
+            dashboard_registro: resolve(__dirname, 'dashboard-registro.html'),
             // Puntos de entrada para los archivos JavaScript
             // jquery: 'src/jquery.js',
             // index: 'src/index.js',
